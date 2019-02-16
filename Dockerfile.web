@@ -1,13 +1,14 @@
 FROM maven:3.6-jdk-8
 
-COPY org.opentestmodeling.vstep.ngt.core.parent/ ./
 
-RUN mvn
-RUN mvn install -DskipTests
+COPY org.opentestmodeling.vstep.ngt.core.parent/ apps/
+
+WORKDIR apps
+RUN mvn clean install -DskipTests
 
 EXPOSE 8080
 
-WORKDIR org.opentestmodeling.vstep.ngt.core.web
+WORKDIR apps/org.opentestmodeling.vstep.ngt.core.web
 
 CMD mvn jetty:run
 
