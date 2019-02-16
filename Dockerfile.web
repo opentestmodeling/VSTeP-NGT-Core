@@ -2,7 +2,8 @@ FROM maven:3.6-jdk-8
 
 COPY org.opentestmodeling.vstep.ngt.core.parent/ ./
 
-RUN MAVEN_OPTS=-Xmx2048m mvn -f `pwd`/pom.xml install -DskipTests
+RUN mvn
+RUN mvn install -DskipTests
 
 EXPOSE 8080
 
