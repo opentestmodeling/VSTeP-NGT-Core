@@ -8,7 +8,8 @@ RUN mvn clean install -DskipTests
 
 EXPOSE 8080
 
-WORKDIR apps/org.opentestmodeling.vstep.ngt.core.web
+WORKDIR org.opentestmodeling.vstep.ngt.core.web
+RUN mvn org.apache.maven.plugins:maven-dependency-plugin:3.0.1:go-offline
 
 CMD mvn jetty:run
 
