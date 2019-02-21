@@ -12,12 +12,12 @@ RUN rm org.opentestmodeling.vstep.ngt.core.ide/target/*-sources.jar
 
 FROM openjdk:8
 
-RUN sudo apt-get install socat -y
+RUN apt-get install socat -y
 
 WORKDIR /apps
 COPY --from=builder sources/*.jar ./sources/
 COPY --from=builder org.opentestmodeling.vstep.ngt.core.ide/target/*.jar ./
 
-EXPOSE 441
+EXPOSE 4417
 
 CMD socat TCP4-LISTEN:4417,reuseaddr,fork EXEC:"java -jar /apps/*.jar"
