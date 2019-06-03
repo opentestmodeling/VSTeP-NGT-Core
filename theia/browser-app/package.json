@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "browser-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "@theia/core": "0.8.0-next.436b8129",
+    "@theia/filesystem": "0.8.0-next.436b8129",
+    "@theia/workspace": "0.8.0-next.436b8129",
+    "@theia/preferences": "0.8.0-next.436b8129",
+    "@theia/navigator": "0.8.0-next.436b8129",
+    "@theia/process": "0.8.0-next.436b8129",
+    "@theia/terminal": "0.8.0-next.436b8129",
+    "@theia/editor": "0.8.0-next.436b8129",
+    "@theia/languages": "0.8.0-next.436b8129",
+    "@theia/markers": "0.8.0-next.436b8129",
+    "@theia/monaco": "0.8.0-next.436b8129",
+    "@theia/textmate-grammars": "0.8.0-next.436b8129",
+    "@theia/typescript": "0.8.0-next.436b8129",
+    "@theia/messages": "0.8.0-next.436b8129",
+    "@optemi/vstep-ngt-core-dsl": "0.0.0",
+    "@optemi/vstep-ngt-core-sprotty": "0.0.0"
+  },
+  "devDependencies": {
+    "@theia/cli": "0.8.0-next.436b8129"
+  },
+  "scripts": {
+    "prepare": "theia build --mode development",
+    "start": "theia start",
+    "watch": "theia build --watch --mode development"
+  },
+  "theia": {
+    "target": "browser"
+  }
+}
