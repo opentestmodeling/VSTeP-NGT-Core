@@ -1,6 +1,6 @@
 import { QuickPickService, WidgetManager } from '@theia/core/lib/browser';
 import { EditorManager } from '@theia/editor/lib/browser';
-import { Workspace } from '@theia/languages/lib/browser';
+import { MonacoWorkspace } from '@theia/monaco/lib/browser/monaco-workspace';
 import { inject, injectable } from 'inversify';
 import { DiagramManager, LSTheiaSprottyConnector, TheiaFileSaver, TheiaSprottyConnector } from '@pizzafactory/sprotty-theia';
 import { VSTEP_NGT_CORE_DIAGRAM_TYPE } from './vstep-ngt-core-diagram-configuration';
@@ -18,7 +18,7 @@ export class VstepNgtCoreDiagramManager extends DiagramManager {
                 @inject(TheiaFileSaver) fileSaver: TheiaFileSaver,
                 @inject(WidgetManager) widgetManager: WidgetManager,
                 @inject(EditorManager) editorManager: EditorManager,
-                @inject(Workspace) workspace: Workspace,
+                @inject(MonacoWorkspace) workspace: MonacoWorkspace,
                 @inject(QuickPickService) quickPickService: QuickPickService) {
         super();
         this._diagramConnector = new LSTheiaSprottyConnector({diagramLanguageClient, fileSaver, editorManager, widgetManager, workspace, quickPickService, diagramManager: this});
