@@ -1,7 +1,7 @@
 import { Container, injectable } from "inversify";
 import { configureCommand, configureModelElement, KeyTool, TYPES } from '@pizzafactory/sprotty-theia';
 import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEditor, 
-    DeleteWithWorkspaceEditCommand, DiagramConfiguration, IRootPopupModelProvider, 
+    DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider, 
     LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener, 
     RenameLabelEditor, TheiaDiagramServer, TheiaKeyTool, WorkspaceEditCommand } from "@pizzafactory/sprotty-theia";
 import { createStateDiagramContainer } from '@optemi/vstep-ngt-core-sprotty/lib/di-config';
@@ -20,6 +20,7 @@ export class VstepNgtCoreDiagramConfiguration implements DiagramConfiguration {
         container.bind(TheiaDiagramServer).toService(VstepNgtCoreDiagramServer);
         container.bind(LSTheiaDiagramServer).toService(VstepNgtCoreDiagramServer);
         container.bind(TYPES.ModelSource).toService(TheiaDiagramServer);
+        container.bind(EditDiagramLocker).toSelf().inSingletonScope();
         container.rebind(KeyTool).to(TheiaKeyTool).inSingletonScope();
 
         container.bind(LSTheiaDiagramServerProvider).toProvider<LSTheiaDiagramServer>((context: any) => {

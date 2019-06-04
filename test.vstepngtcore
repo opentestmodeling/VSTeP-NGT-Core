@@ -1,0 +1,21 @@
+/* */
+//
+
+container name "にほんご" {
+    container name2 "にほんご" {
+        (fooo )
+        [bar] {
+            
+        }
+        (fooo ) <|-- [bar] 
+    }
+}
+
+(foo)
+[bar]
+[baz]
+
+(foo) <|-- [bar]
+(foo) <|-- [baz]
+
+(hoge)
