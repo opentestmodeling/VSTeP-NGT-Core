@@ -4,7 +4,7 @@ import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEdit
     DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider, 
     LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener, 
     RenameLabelEditor, TheiaDiagramServer, TheiaKeyTool, WorkspaceEditCommand } from "@pizzafactory/sprotty-theia";
-import { createStateDiagramContainer } from '@optemi/vstep-ngt-core-sprotty/lib/di-config';
+import { createStateDiagramContainer } from '@optemi/vstep-ngt-core-sprotty/lib/di.config';
 import { PaletteButtonView } from '@optemi/vstep-ngt-core-sprotty/lib/html-views';
 import { VstepNgtCoreDiagramServer } from "./vstep-ngt-core-diagram-server";
 

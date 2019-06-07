@@ -1,5 +1,6 @@
 .sprotty-node {
-    fill: lightblue
+    fill: none;
+    stroke: none;
 }
 
 .sprotty-node.selected {
@@ -60,3 +61,8 @@
     height: 0px;
 }
 
+.vstepngt-box {
+    fill: lightblue;
+    stroke-width: 0.5;
+    stroke: #888;
+}

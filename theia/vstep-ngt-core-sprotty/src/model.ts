@@ -1,5 +1,5 @@
 import { injectable } from "inversify";
-import { Action, CreateElementAction, CreatingOnDrag, creatingOnDragFeature, EditableLabel, 
+import { Action, CircularNode, CreateElementAction, CreatingOnDrag, creatingOnDragFeature, EditableLabel, 
     editLabelFeature, hoverFeedbackFeature, ManhattanEdgeRouter, popupFeature, RectangularNode, 
     RectangularPort, SChildElement, SEdge, SGraph, SGraphFactory, SLabel, SModelElementSchema, 
     SParentElement, SRoutableElement, EdgePlacement } from "sprotty";
@@ -28,7 +28,19 @@ export class StatesDiagram extends SGraph {
     }
 }
 
-export class StatesNode extends RectangularNode {
+export class TestTarget extends CircularNode {
+    canConnect(routable: SRoutableElement, role: string) {
+        return true;
+    }
+}
+
+export class TestViewpoint extends RectangularNode {
+    canConnect(routable: SRoutableElement, role: string) {
+        return true;
+    }
+}
+
+export class TestContainer extends RectangularNode {
     canConnect(routable: SRoutableElement, role: string) {
         return true;
     }

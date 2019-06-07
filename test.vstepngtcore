@@ -1,21 +1,24 @@
 /* */
 //
 
-container name "にほんご" {
-    container name2 "にほんご" {
-        (fooo )
-        [bar] {
-            
-        }
-        (fooo ) <|-- [bar] 
+
+/*
+container name2 "英語" {
+    container name "にほんご" {
+       (a)
+       [b]
     }
 }
+*/
 
-(foo)
-[bar]
-[baz]
+[c] <<foo>> {
+    items { "95" "98" "Me" "XP" "Vista" "7" "8" "8.1" "10" }
+    quality-risk {
+        importance = 1
+        severity = 2
+    }
+    "all coverage"
+}
 
-(foo) <|-- [bar]
-(foo) <|-- [baz]
 
-(hoge)
+(e) <<bar>>
