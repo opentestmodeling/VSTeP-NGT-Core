@@ -1,0 +1,3 @@
+export const VSTEP_NGT_CORE_LANGUAGE_FILE_EXTENSION = '.vstepngtcore'
+export const VSTEP_NGT_CORE_LANGUAGE_SERVER_ID = 'VstepNgtCore'
+export const VSTEP_NGT_CORE_LANGUAGE_SERVER_NAME = 'VSTeP/NGT Core DSL'

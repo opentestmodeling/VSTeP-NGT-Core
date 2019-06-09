@@ -1,0 +1,34 @@
+{
+  "name": "@optemi/vstep-ngt-core-dsl",
+  "keywords": [
+    "theia-extension"
+  ],
+  "version": "0.0.0",
+  "files": [
+    "lib",
+    "src",
+    "build",
+    "data"
+  ],
+  "dependencies": {
+    "@theia/core": "0.8.0-next.0b456192",
+    "@pizzafactory/sprotty-theia": "0.7.0-next-1240",
+    "@optemi/vstep-ngt-core-sprotty": "0.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/vstep-ngt-core-dsl-frontend-module",
+      "backend": "lib/node/vstep-ngt-core-dsl-backend-module"
+    }
+  ]
+}
