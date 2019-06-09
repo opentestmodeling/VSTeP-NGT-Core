@@ -1,0 +1,22 @@
+{
+  "name": "@optemi/vstep-ngt-core-sprotty",
+  "version": "0.0.0",
+  "files": [
+    "lib",
+    "src",
+    "css"
+  ],
+  "dependencies": {
+    "@pizzafactory/sprotty-theia": "0.7.0-next-1240"
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"
+  }
+}
