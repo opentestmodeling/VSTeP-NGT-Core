@@ -6,35 +6,39 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Ubuntu-16.04'
-
-steps:
-- script: |
-    git clone -b R2_17_0 git://git.eclipse.org/gitroot/emf/org.eclipse.emf.git
-    git clone -b R2_17_0 git://git.eclipse.org/gitroot/xsd/org.eclipse.xsd.git 
-  displayName: Cloning EMF related repo.
-
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'org.eclipse.emf/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'install'
-  displayName: Building EMF.
-
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'org.opentestmodeling.vstep.ngt.core.parent/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-  displayName: Building VSTeP/NGT Core.
+jobs:
+- job: build
+  timeoutInMinutes: 120
+  
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  
+  steps:
+  - script: |
+      git clone -b R2_17_0 git://git.eclipse.org/gitroot/emf/org.eclipse.emf.git
+      git clone -b R2_17_0 git://git.eclipse.org/gitroot/xsd/org.eclipse.xsd.git 
+    displayName: Cloning EMF related repo.
+  
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'org.eclipse.emf/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: false
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      goals: 'install'
+    displayName: Building EMF.
+  
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'org.opentestmodeling.vstep.ngt.core.parent/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: false
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      goals: 'package'
+    displayName: Building VSTeP/NGT Core.
