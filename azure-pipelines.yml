@@ -22,7 +22,7 @@ jobs:
   - task: Maven@3
     inputs:
       mavenPomFile: 'org.eclipse.emf/pom.xml'
-      mavenOptions: '-Xmx3072m'
+      mavenOptions: '-Xmx4096m -Djava.net.preferIPv4Stack=true -Dhttp.keepAlive=false'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
@@ -34,7 +34,7 @@ jobs:
   - task: Maven@3
     inputs:
       mavenPomFile: 'org.opentestmodeling.vstep.ngt.core.parent/pom.xml'
-      mavenOptions: '-Xmx3072m'
+      mavenOptions: '-Xmx4096m -Djava.net.preferIPv4Stack=true -Dhttp.keepAlive=false'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
