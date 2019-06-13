@@ -17,8 +17,8 @@
     "@theia/textmate-grammars": "0.8.0-next.0b456192",
     "@theia/typescript": "0.8.0-next.0b456192",
     "@theia/messages": "0.8.0-next.0b456192",
-    "@optemi/vstep-ngt-core-dsl": "0.0.0",
-    "@optemi/vstep-ngt-core-sprotty": "0.0.0"
+    "@opentestmodeling/vstep-ngt-core-dsl": "0.0.0",
+    "@opentestmodeling/vstep-ngt-core-sprotty": "0.0.0"
   },
   "resolutions": {
     "vscode-uri": "<=1.0.6"
