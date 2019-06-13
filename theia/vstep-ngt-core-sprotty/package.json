@@ -1,5 +1,5 @@
 {
-  "name": "@optemi/vstep-ngt-core-sprotty",
+  "name": "@opentestmodeling/vstep-ngt-core-sprotty",
   "version": "0.0.0",
   "files": [
     "lib",

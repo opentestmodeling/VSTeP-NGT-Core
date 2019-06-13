@@ -1,5 +1,5 @@
 {
-  "name": "@optemi/vstep-ngt-core-dsl",
+  "name": "@opentestmodeling/vstep-ngt-core-dsl",
   "keywords": [
     "theia-extension"
   ],
@@ -13,7 +13,7 @@
   "dependencies": {
     "@theia/core": "0.8.0-next.0b456192",
     "@pizzafactory/sprotty-theia": "0.7.0-next-1240",
-    "@optemi/vstep-ngt-core-sprotty": "0.0.0"
+    "@opentestmodeling/vstep-ngt-core-sprotty": "0.0.0"
   },
   "devDependencies": {
     "rimraf": "latest",
