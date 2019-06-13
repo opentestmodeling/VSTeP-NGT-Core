@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd `dirname $0`
+java -cp ./*-ls.jar org.opentestmodeling.vstep.ngt.core.ide.launch.VstepCoreServerLauncher

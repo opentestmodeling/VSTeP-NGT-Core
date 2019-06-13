@@ -7,7 +7,7 @@ import { createSocketConnection } from 'vscode-ws-jsonrpc/lib/server';
 import { VSTEP_NGT_CORE_LANGUAGE_SERVER_ID, VSTEP_NGT_CORE_LANGUAGE_SERVER_NAME } from '../common';
 
 const EXECUTABLE_NAME = isWindows ? 'vstep-ngt-core-language-server.bat' : 'vstep-ngt-core-language-server';
-const EXECUTABLE_PATH = resolve(join(__dirname, '..', '..', 'build', 'vstep-ngt-core-language-server', 'bin', EXECUTABLE_NAME));
+const EXECUTABLE_PATH = resolve(join(__dirname, '..', '..', 'build', EXECUTABLE_NAME));
 
 @injectable()
 export class VstepNgtCoreLanguageServerContribution extends BaseLanguageServerContribution {
