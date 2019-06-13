@@ -30,5 +30,6 @@
       "frontend": "lib/browser/vstep-ngt-core-dsl-frontend-module",
       "backend": "lib/node/vstep-ngt-core-dsl-backend-module"
     }
-  ]
+  ],
+  "gitHead": "2f318e7e73c8f739ca0e817ae1414ec6c31abf54"
 }
