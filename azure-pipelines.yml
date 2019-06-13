@@ -22,6 +22,7 @@ jobs:
   - task: Maven@3
     inputs:
       mavenPomFile: 'org.eclipse.emf/pom.xml'
+      options: '-B'
       mavenOptions: '-Xmx4096m -Djava.net.preferIPv4Stack=true -Dhttp.keepAlive=false -Dtycho.disableP2Mirrors=true'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
