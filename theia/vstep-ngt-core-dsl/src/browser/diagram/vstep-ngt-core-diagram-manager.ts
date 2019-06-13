@@ -29,6 +29,6 @@ export class VstepNgtCoreDiagramManager extends DiagramManager {
     }
 
     get label() {
-        return 'State machine diagram';
+        return 'VSTeP/NGT Core diagram';
     }
 }
