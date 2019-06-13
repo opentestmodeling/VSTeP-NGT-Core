@@ -18,5 +18,6 @@
     "clean": "rimraf lib",
     "build": "tsc",
     "watch": "tsc -w"
-  }
+  },
+  "gitHead": "2f318e7e73c8f739ca0e817ae1414ec6c31abf54"
 }
