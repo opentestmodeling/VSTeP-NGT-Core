@@ -1,7 +1,7 @@
 import { inject, injectable } from "inversify";
-import { CompletionLabelEditor, isTraceable, LSTheiaDiagramServer, RenameLabelEditor } from "@pizzafactory/sprotty-theia";
-import { Action, ActionHandlerRegistry, EditLabelAction, getSubType, IModelFactory, ReconnectCommand, 
-    SLabel, SModelRoot, TYPES } from "sprotty";
+import { CompletionLabelEditor, /*isTraceable,*/ LSTheiaDiagramServer, RenameLabelEditor } from "@pizzafactory/sprotty-theia";
+import { Action, ActionHandlerRegistry, EditLabelAction, /*getSubType,*/ IModelFactory, ReconnectCommand,
+    /*SLabel,*/ /*SModelRoot,*/ TYPES } from "sprotty";
 
 @injectable()
 export class VstepNgtCoreDiagramServer extends LSTheiaDiagramServer {
@@ -17,6 +17,7 @@ export class VstepNgtCoreDiagramServer extends LSTheiaDiagramServer {
     }
 
     handleLocally(action: Action): boolean {
+/*
         if (action.kind === EditLabelAction.KIND) {
             const label = this.getElement((action as EditLabelAction).labelId);
             if (label instanceof SLabel && isTraceable(label))
@@ -26,14 +27,16 @@ export class VstepNgtCoreDiagramServer extends LSTheiaDiagramServer {
                     this.renameLabelEditor.edit(label);
             return false;
         }
+*/
         return super.handleLocally(action);
     }
 
-    private getElement(elementId: string) {
+/*    private getElement(elementId: string) {
         const root = (this.currentRoot instanceof SModelRoot)
             ? this.currentRoot
             : this.modelFactory.createRoot(this.currentRoot);
         return root.index.getById(elementId);
     }
+*/
 }
 
