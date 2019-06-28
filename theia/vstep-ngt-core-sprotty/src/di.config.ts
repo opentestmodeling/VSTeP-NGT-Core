@@ -1,5 +1,5 @@
 import { Container, ContainerModule } from "inversify";
-import '@pizzafactory/sprotty-theia/css/theia-sprotty.css';
+import 'sprotty-theia/css/theia-sprotty.css';
 import 'sprotty/css/sprotty.css';
 import { boundsModule, buttonModule, configureModelElement, ConsoleLogger, defaultModule, expandModule, 
     exportModule, fadeModule, hoverModule, HtmlRoot, HtmlRootView, LogLevel, modelSourceModule, moveModule, 
