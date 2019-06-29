@@ -7,7 +7,7 @@
     "css"
   ],
   "dependencies": {
-    "sprotty-theia": "0.7.0-next.ffb2d19"
+    "@pizzafactory/sprotty-theia": "~0.8.0"
   },
   "devDependencies": {
     "rimraf": "latest",

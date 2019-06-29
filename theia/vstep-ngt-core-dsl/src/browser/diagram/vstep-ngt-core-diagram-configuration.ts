@@ -1,5 +1,5 @@
 import { Container, injectable } from "inversify";
-import { configureCommand, configureModelElement, KeyTool, TYPES } from 'sprotty-theia';
+import { configureCommand, configureModelElement, KeyTool, TYPES } from 'sprotty';
 import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEditor, 
     DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider, 
     LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener, 

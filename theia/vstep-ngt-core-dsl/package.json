@@ -11,8 +11,8 @@
     "data"
   ],
   "dependencies": {
-    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.0.1-next.0",
-    "sprotty-theia": "0.7.0-next.ffb2d19",
+    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.0.1",
+    "@pizzafactory/sprotty-theia": "~0.8.0",
     "@theia/core": "0.8.0"
   },
   "devDependencies": {
