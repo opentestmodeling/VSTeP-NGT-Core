@@ -8,7 +8,7 @@ import { LanguageClientContribution } from '@theia/languages/lib/browser';
 import { LanguageGrammarDefinitionContribution } from '@theia/monaco/lib/browser/textmate';
 import { ContainerModule } from "inversify";
 import { DiagramConfiguration, DiagramManager, DiagramManagerProvider, LSDiagramCommandContribution,
-    LSDiagramKeybindingContribution } from 'sprotty-theia';
+    LSDiagramKeybindingContribution } from '@pizzafactory/sprotty-theia';
 import { VstepNgtCoreDiagramConfiguration } from './diagram/vstep-ngt-core-diagram-configuration';
 import { VstepNgtCoreDiagramLanguageClient } from './diagram/vstep-ngt-core-diagram-language-client';
 import { VstepNgtCoreDiagramManager } from './diagram/vstep-ngt-core-diagram-manager';

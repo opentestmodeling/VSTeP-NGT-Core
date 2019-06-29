@@ -1,9 +1,10 @@
 {
+  "private": true,
   "name": "@opentestmodeling/vstep-ngt-core-dsl",
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.0.1-next.0",
+  "version": "0.8.0",
   "files": [
     "lib",
     "src",
@@ -11,8 +12,8 @@
     "data"
   ],
   "dependencies": {
-    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.0.1",
-    "@pizzafactory/sprotty-theia": "~0.8.0",
+    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.8.0",
+    "@pizzafactory/sprotty-theia": "0.8.0-next.8d3a1a1",
     "@theia/core": "0.8.0"
   },
   "devDependencies": {

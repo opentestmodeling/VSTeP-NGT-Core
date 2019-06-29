@@ -1,11 +1,11 @@
 import { Container, ContainerModule } from "inversify";
-import 'sprotty-theia/css/theia-sprotty.css';
+import '@pizzafactory/sprotty-theia/css/theia-sprotty.css';
 import 'sprotty/css/sprotty.css';
-import { boundsModule, buttonModule, configureModelElement, ConsoleLogger, defaultModule, expandModule, 
-    exportModule, fadeModule, hoverModule, HtmlRoot, HtmlRootView, LogLevel, modelSourceModule, moveModule, 
-    openModule, overrideViewerOptions, PreRenderedElement, PreRenderedView, RectangularNodeView, SEdge, 
-    selectModule, SGraphView, SLabelView, TYPES, undoRedoModule, viewportModule, decorationModule, 
-    PolylineEdgeView, SModelRoot, edgeEditModule, SCompartmentView, SRoutingHandle, SRoutingHandleView, CreateElementCommand, labelEditModule, 
+import { boundsModule, buttonModule, configureModelElement, ConsoleLogger, defaultModule, expandModule,
+    exportModule, fadeModule, hoverModule, HtmlRoot, HtmlRootView, LogLevel, modelSourceModule, moveModule,
+    openModule, overrideViewerOptions, PreRenderedElement, PreRenderedView, RectangularNodeView, SEdge,
+    selectModule, SGraphView, SLabelView, TYPES, undoRedoModule, viewportModule, decorationModule,
+    PolylineEdgeView, SModelRoot, edgeEditModule, SCompartmentView, SRoutingHandle, SRoutingHandleView, CreateElementCommand, labelEditModule,
     configureCommand, updateModule, routingModule, ManhattanEdgeRouter, edgeLayoutModule, SCompartment } from 'sprotty';
 import "../css/diagram.css";
 import { PolylineDependencyEdgeView, PolylineInheritanceEdgeView, TriangleButtonView, VstepNgtBoxView, VstepNgtTestTargetView } from "./views";
