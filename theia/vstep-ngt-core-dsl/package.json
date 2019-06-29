@@ -3,7 +3,7 @@
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.8.0-next.1",
+  "version": "0.8.0-next.2",
   "files": [
     "lib",
     "src",
@@ -11,7 +11,7 @@
     "data"
   ],
   "dependencies": {
-    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.8.0-next.1",
+    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.8.0-next.2",
     "@pizzafactory/sprotty-theia": "0.8.0-next.8d3a1a1",
     "@theia/core": "0.8.0"
   },

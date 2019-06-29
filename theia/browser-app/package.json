@@ -1,10 +1,10 @@
 {
   "private": true,
   "name": "browser-app",
-  "version": "0.8.0-next.1",
+  "version": "0.8.0-next.2",
   "dependencies": {
-    "@opentestmodeling/vstep-ngt-core-dsl": "^0.8.0-next.1",
-    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.8.0-next.1",
+    "@opentestmodeling/vstep-ngt-core-dsl": "^0.8.0-next.2",
+    "@opentestmodeling/vstep-ngt-core-sprotty": "^0.8.0-next.2",
     "@theia/core": "0.8.0",
     "@theia/editor": "0.8.0",
     "@theia/filesystem": "0.8.0",
