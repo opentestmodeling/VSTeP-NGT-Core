@@ -1,8 +1,8 @@
 import { Container, injectable } from "inversify";
-import { configureCommand, configureModelElement, KeyTool, TYPES } from '@pizzafactory/sprotty-theia';
-import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEditor, 
-    DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider, 
-    LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener, 
+import { configureCommand, configureModelElement, KeyTool, TYPES } from 'sprotty';
+import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEditor,
+    DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider,
+    LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener,
     RenameLabelEditor, TheiaDiagramServer, TheiaKeyTool, WorkspaceEditCommand } from "@pizzafactory/sprotty-theia";
 import { createStateDiagramContainer } from '@opentestmodeling/vstep-ngt-core-sprotty/lib/di.config';
 import { PaletteButtonView } from '@opentestmodeling/vstep-ngt-core-sprotty/lib/html-views';
@@ -35,7 +35,7 @@ export class VstepNgtCoreDiagramConfiguration implements DiagramConfiguration {
         container.bind(PaletteMouseListener).toSelf().inSingletonScope();
         container.rebind(TYPES.PopupMouseListener).to(PaletteMouseListener);
         configureModelElement(container, 'button:create', PaletteButton, PaletteButtonView);
-        
+
         configureCommand(container, DeleteWithWorkspaceEditCommand);
         configureCommand(container, WorkspaceEditCommand);
 
