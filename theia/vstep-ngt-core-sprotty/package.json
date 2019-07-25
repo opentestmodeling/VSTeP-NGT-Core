@@ -1,6 +1,6 @@
 {
   "name": "@opentestmodeling/vstep-ngt-core-sprotty",
-  "version": "0.0.1-next.0",
+  "version": "0.8.0",
   "files": [
     "lib",
     "src",
