@@ -26,3 +26,9 @@ jobs:
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
     displayName: Building VSTeP/NGT Core.
+
+  - script: |
+      yarn
+      npx vsce package
+    workingDirectory: 'vscode-extension-self-contained'
+    displayName: Packaging the visual studio extension.
