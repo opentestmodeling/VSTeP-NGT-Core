@@ -1,6 +1,6 @@
 import { LanguageClientFactory, Languages, Workspace } from '@theia/languages/lib/browser';
 import { inject, injectable, multiInject } from 'inversify';
-import { DiagramLanguageClientContribution, DiagramManagerProvider } from '@pizzafactory/sprotty-theia';
+import { DiagramLanguageClientContribution, DiagramManagerProvider } from 'sprotty-theia';
 import { VSTEP_NGT_CORE_LANGUAGE_FILE_EXTENSION, VSTEP_NGT_CORE_LANGUAGE_SERVER_ID, VSTEP_NGT_CORE_LANGUAGE_SERVER_NAME } from '../common';
 
 @injectable()

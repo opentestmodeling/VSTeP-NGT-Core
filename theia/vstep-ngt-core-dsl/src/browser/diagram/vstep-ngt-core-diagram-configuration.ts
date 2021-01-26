@@ -1,9 +1,9 @@
 import { Container, injectable } from "inversify";
-import { configureCommand, configureModelElement, KeyTool, TYPES } from '@pizzafactory/sprotty-theia';
+import { configureCommand, configureModelElement, KeyTool, TYPES } from 'sprotty';
 import { CodeActionPalettePopupProvider, CodeActionProvider, CompletionLabelEditor, 
     DeleteWithWorkspaceEditCommand, DiagramConfiguration, EditDiagramLocker, IRootPopupModelProvider, 
     LSTheiaDiagramServer, LSTheiaDiagramServerProvider, PaletteButton, PaletteMouseListener, 
-    RenameLabelEditor, TheiaDiagramServer, TheiaKeyTool, WorkspaceEditCommand } from "@pizzafactory/sprotty-theia";
+    RenameLabelEditor, TheiaDiagramServer, TheiaKeyTool, WorkspaceEditCommand } from "sprotty-theia";
 import { createStateDiagramContainer } from '@opentestmodeling/vstep-ngt-core-sprotty/lib/di.config';
 import { PaletteButtonView } from '@opentestmodeling/vstep-ngt-core-sprotty/lib/html-views';
 import { VstepNgtCoreDiagramServer } from "./vstep-ngt-core-diagram-server";
